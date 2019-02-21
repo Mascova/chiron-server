@@ -1,0 +1,24 @@
+{
+    "chironServerApp": {
+        "receiptDrug": {
+            "home": {
+                "title": "Receipt Drugs",
+                "createLabel": "Buat Receipt Drug baru",
+                "createOrEditLabel": "Buat atau edit Receipt Drug"
+            },
+            "created": "Receipt Drug dengan id {{ param }} telah dibuat",
+            "updated": "Receipt Drug dengan id {{ param }} telah diperbaharui",
+            "deleted": "Receipt Drug dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Receipt Drug {{ id }}?"
+            },
+            "detail": {
+                "title": "Receipt Drug"
+            },
+            "amount": "Amount",
+            "price": "Price",
+            "receipt": "Receipt",
+            "drugStock": "Drug Stock"
+        }
+    }
+}

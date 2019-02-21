@@ -1,0 +1,36 @@
+{
+    "name": "ReceiptDrug",
+    "fields": [
+        {
+            "fieldName": "amount",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "price",
+            "fieldType": "BigDecimal"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "receipt",
+            "otherEntityName": "receipt",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "drugStock",
+            "otherEntityName": "drugStock",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190221164421",
+    "entityTableName": "receipt_drug",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

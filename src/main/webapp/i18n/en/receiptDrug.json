@@ -1,0 +1,24 @@
+{
+    "chironServerApp": {
+        "receiptDrug": {
+            "home": {
+                "title": "Receipt Drugs",
+                "createLabel": "Create a new Receipt Drug",
+                "createOrEditLabel": "Create or edit a Receipt Drug"
+            },
+            "created": "A new Receipt Drug is created with identifier {{ param }}",
+            "updated": "A Receipt Drug is updated with identifier {{ param }}",
+            "deleted": "A Receipt Drug is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Receipt Drug {{ id }}?"
+            },
+            "detail": {
+                "title": "Receipt Drug"
+            },
+            "amount": "Amount",
+            "price": "Price",
+            "receipt": "Receipt",
+            "drugStock": "Drug Stock"
+        }
+    }
+}

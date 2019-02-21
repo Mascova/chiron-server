@@ -1,0 +1,43 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="receiptDrug">
+            <h2><span jhiTranslate="chironServerApp.receiptDrug.detail.title">Receipt Drug</span> {{receiptDrug.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="chironServerApp.receiptDrug.amount">Amount</span></dt>
+                <dd>
+                    <span>{{receiptDrug.amount}}</span>
+                </dd>
+                <dt><span jhiTranslate="chironServerApp.receiptDrug.price">Price</span></dt>
+                <dd>
+                    <span>{{receiptDrug.price}}</span>
+                </dd>
+                <dt><span jhiTranslate="chironServerApp.receiptDrug.receipt">Receipt</span></dt>
+                <dd>
+                    <div *ngIf="receiptDrug.receipt">
+                        <a [routerLink]="['/receipt', receiptDrug.receipt?.id, 'view']">{{receiptDrug.receipt?.id}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="chironServerApp.receiptDrug.drugStock">Drug Stock</span></dt>
+                <dd>
+                    <div *ngIf="receiptDrug.drugStock">
+                        <a [routerLink]="['/drug-stock', receiptDrug.drugStock?.id, 'view']">{{receiptDrug.drugStock?.id}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/receipt-drug', receiptDrug.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

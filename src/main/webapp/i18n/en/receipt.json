@@ -1,0 +1,24 @@
+{
+    "chironServerApp": {
+        "receipt": {
+            "home": {
+                "title": "Receipts",
+                "createLabel": "Create a new Receipt",
+                "createOrEditLabel": "Create or edit a Receipt"
+            },
+            "created": "A new Receipt is created with identifier {{ param }}",
+            "updated": "A Receipt is updated with identifier {{ param }}",
+            "deleted": "A Receipt is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Receipt {{ id }}?"
+            },
+            "detail": {
+                "title": "Receipt"
+            },
+            "issueTime": "Issue Time",
+            "visit": "Visit",
+            "receiptService": "Receipt Service",
+            "receiptDrug": "Receipt Drug"
+        }
+    }
+}

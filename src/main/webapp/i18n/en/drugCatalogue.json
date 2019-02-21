@@ -1,0 +1,23 @@
+{
+    "chironServerApp": {
+        "drugCatalogue": {
+            "home": {
+                "title": "Drug Catalogues",
+                "createLabel": "Create a new Drug Catalogue",
+                "createOrEditLabel": "Create or edit a Drug Catalogue"
+            },
+            "created": "A new Drug Catalogue is created with identifier {{ param }}",
+            "updated": "A Drug Catalogue is updated with identifier {{ param }}",
+            "deleted": "A Drug Catalogue is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Drug Catalogue {{ id }}?"
+            },
+            "detail": {
+                "title": "Drug Catalogue"
+            },
+            "name": "Name",
+            "description": "Description",
+            "drugStock": "Drug Stock"
+        }
+    }
+}
