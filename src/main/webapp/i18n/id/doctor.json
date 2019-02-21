@@ -1,0 +1,27 @@
+{
+    "chironServerApp": {
+        "doctor": {
+            "home": {
+                "title": "Doctors",
+                "createLabel": "Buat Doctor baru",
+                "createOrEditLabel": "Buat atau edit Doctor"
+            },
+            "created": "Doctor dengan id {{ param }} telah dibuat",
+            "updated": "Doctor dengan id {{ param }} telah diperbaharui",
+            "deleted": "Doctor dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Doctor {{ id }}?"
+            },
+            "detail": {
+                "title": "Doctor"
+            },
+            "nik": "Nik",
+            "name": "Name",
+            "address": "Address",
+            "dob": "Dob",
+            "phoneNo1": "Phone No 1",
+            "phoneNo2": "Phone No 2",
+            "visit": "Visit"
+        }
+    }
+}

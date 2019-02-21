@@ -1,0 +1,27 @@
+{
+    "chironServerApp": {
+        "visit": {
+            "home": {
+                "title": "Visits",
+                "createLabel": "Create a new Visit",
+                "createOrEditLabel": "Create or edit a Visit"
+            },
+            "created": "A new Visit is created with identifier {{ param }}",
+            "updated": "A Visit is updated with identifier {{ param }}",
+            "deleted": "A Visit is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Visit {{ id }}?"
+            },
+            "detail": {
+                "title": "Visit"
+            },
+            "visitTime": "Visit Time",
+            "symptoms": "Symptoms",
+            "diagnose": "Diagnose",
+            "status": "Status",
+            "patient": "Patient",
+            "doctor": "Doctor",
+            "receipt": "Receipt"
+        }
+    }
+}

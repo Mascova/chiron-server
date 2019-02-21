@@ -1,0 +1,19 @@
+{
+    "name": "Receipt",
+    "fields": [
+        {
+            "fieldName": "issueTime",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190221155933",
+    "entityTableName": "receipt",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

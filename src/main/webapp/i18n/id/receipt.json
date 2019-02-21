@@ -1,0 +1,21 @@
+{
+    "chironServerApp": {
+        "receipt": {
+            "home": {
+                "title": "Receipts",
+                "createLabel": "Buat Receipt baru",
+                "createOrEditLabel": "Buat atau edit Receipt"
+            },
+            "created": "Receipt dengan id {{ param }} telah dibuat",
+            "updated": "Receipt dengan id {{ param }} telah diperbaharui",
+            "deleted": "Receipt dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Receipt {{ id }}?"
+            },
+            "detail": {
+                "title": "Receipt"
+            },
+            "issueTime": "Issue Time"
+        }
+    }
+}
