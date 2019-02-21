@@ -1,0 +1,46 @@
+{
+    "name": "Patient",
+    "fields": [
+        {
+            "fieldName": "nik",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "address",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dob",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "phoneNo1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "phoneNo2",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "visit",
+            "otherEntityName": "visit",
+            "otherEntityRelationshipName": "patient"
+        }
+    ],
+    "changelogDate": "20190221154733",
+    "entityTableName": "patient",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,31 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="receiptService">
+            <h2><span jhiTranslate="chironServerApp.receiptService.detail.title">Receipt Service</span> {{receiptService.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="chironServerApp.receiptService.amount">Amount</span></dt>
+                <dd>
+                    <span>{{receiptService.amount}}</span>
+                </dd>
+                <dt><span jhiTranslate="chironServerApp.receiptService.price">Price</span></dt>
+                <dd>
+                    <span>{{receiptService.price}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/receipt-service', receiptService.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

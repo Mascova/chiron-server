@@ -1,0 +1,38 @@
+{
+    "name": "Visit",
+    "fields": [
+        {
+            "fieldName": "visitTime",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "symptoms",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "diagnose",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "patient",
+            "otherEntityName": "patient",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190221154736",
+    "entityTableName": "visit",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

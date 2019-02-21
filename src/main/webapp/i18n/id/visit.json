@@ -1,0 +1,25 @@
+{
+    "chironServerApp": {
+        "visit": {
+            "home": {
+                "title": "Visits",
+                "createLabel": "Buat Visit baru",
+                "createOrEditLabel": "Buat atau edit Visit"
+            },
+            "created": "Visit dengan id {{ param }} telah dibuat",
+            "updated": "Visit dengan id {{ param }} telah diperbaharui",
+            "deleted": "Visit dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Visit {{ id }}?"
+            },
+            "detail": {
+                "title": "Visit"
+            },
+            "visitTime": "Visit Time",
+            "symptoms": "Symptoms",
+            "diagnose": "Diagnose",
+            "status": "Status",
+            "patient": "Patient"
+        }
+    }
+}

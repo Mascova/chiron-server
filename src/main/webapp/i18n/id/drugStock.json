@@ -1,0 +1,25 @@
+{
+    "chironServerApp": {
+        "drugStock": {
+            "home": {
+                "title": "Drug Stocks",
+                "createLabel": "Buat Drug Stock baru",
+                "createOrEditLabel": "Buat atau edit Drug Stock"
+            },
+            "created": "Drug Stock dengan id {{ param }} telah dibuat",
+            "updated": "Drug Stock dengan id {{ param }} telah diperbaharui",
+            "deleted": "Drug Stock dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Drug Stock {{ id }}?"
+            },
+            "detail": {
+                "title": "Drug Stock"
+            },
+            "buyDate": "Buy Date",
+            "buyPrice": "Buy Price",
+            "amount": "Amount",
+            "expiryDate": "Expiry Date",
+            "sellPrice": "Sell Price"
+        }
+    }
+}

@@ -38,6 +38,17 @@ public class CacheConfiguration {
             cm.createCache(com.mascova.chiron.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(com.mascova.chiron.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.mascova.chiron.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(com.mascova.chiron.domain.Patient.class.getName(), jcacheConfiguration);
+            cm.createCache(com.mascova.chiron.domain.Patient.class.getName() + ".visits", jcacheConfiguration);
+            cm.createCache(com.mascova.chiron.domain.Doctor.class.getName(), jcacheConfiguration);
+            cm.createCache(com.mascova.chiron.domain.Staff.class.getName(), jcacheConfiguration);
+            cm.createCache(com.mascova.chiron.domain.Visit.class.getName(), jcacheConfiguration);
+            cm.createCache(com.mascova.chiron.domain.Service.class.getName(), jcacheConfiguration);
+            cm.createCache(com.mascova.chiron.domain.Receipt.class.getName(), jcacheConfiguration);
+            cm.createCache(com.mascova.chiron.domain.DrugCatalogue.class.getName(), jcacheConfiguration);
+            cm.createCache(com.mascova.chiron.domain.ReceiptService.class.getName(), jcacheConfiguration);
+            cm.createCache(com.mascova.chiron.domain.ReceiptDrug.class.getName(), jcacheConfiguration);
+            cm.createCache(com.mascova.chiron.domain.DrugStock.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

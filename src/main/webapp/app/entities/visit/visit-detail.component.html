@@ -1,0 +1,45 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="visit">
+            <h2><span jhiTranslate="chironServerApp.visit.detail.title">Visit</span> {{visit.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="chironServerApp.visit.visitTime">Visit Time</span></dt>
+                <dd>
+                    <span>{{visit.visitTime}}</span>
+                </dd>
+                <dt><span jhiTranslate="chironServerApp.visit.symptoms">Symptoms</span></dt>
+                <dd>
+                    <span>{{visit.symptoms}}</span>
+                </dd>
+                <dt><span jhiTranslate="chironServerApp.visit.diagnose">Diagnose</span></dt>
+                <dd>
+                    <span>{{visit.diagnose}}</span>
+                </dd>
+                <dt><span jhiTranslate="chironServerApp.visit.status">Status</span></dt>
+                <dd>
+                    <span>{{visit.status}}</span>
+                </dd>
+                <dt><span jhiTranslate="chironServerApp.visit.patient">Patient</span></dt>
+                <dd>
+                    <div *ngIf="visit.patient">
+                        <a [routerLink]="['/patient', visit.patient?.id, 'view']">{{visit.patient?.id}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/visit', visit.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
