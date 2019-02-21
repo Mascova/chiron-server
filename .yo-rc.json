@@ -1,0 +1,42 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "chironServer",
+    "packageName": "com.mascova.chiron",
+    "packageFolder": "com/mascova/chiron",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "id",
+      "en"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "5.8.1",
+    "jwtSecretKey": "MGY0OWFiMGRhYjU5NWExM2Y2NWExMTc2YzRlYzE5YjcwNDFkNzQzMzQ4NmI0NWRjMDk0ODk0ZDM3MGMxYzhjMzA0OWFjMzJkOTFjM2ExZGMxZDdmMGY3OTU0ZmQ1YzQ0ZmE1Y2M4NDgzYzdjNWFmMjFmNGRiMGRhNGZlZWVhZWI=",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "Mascova",
+  "repository-name": "chiron-server"
+}
