@@ -1,0 +1,43 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="receiptService">
+            <h2><span jhiTranslate="chironServerApp.receiptService.detail.title">Receipt Service</span> {{receiptService.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="chironServerApp.receiptService.amount">Amount</span></dt>
+                <dd>
+                    <span>{{receiptService.amount}}</span>
+                </dd>
+                <dt><span jhiTranslate="chironServerApp.receiptService.price">Price</span></dt>
+                <dd>
+                    <span>{{receiptService.price}}</span>
+                </dd>
+                <dt><span jhiTranslate="chironServerApp.receiptService.service">Service</span></dt>
+                <dd>
+                    <div *ngIf="receiptService.service">
+                        <a [routerLink]="['/service', receiptService.service?.id, 'view']">{{receiptService.service?.id}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="chironServerApp.receiptService.receipt">Receipt</span></dt>
+                <dd>
+                    <div *ngIf="receiptService.receipt">
+                        <a [routerLink]="['/receipt', receiptService.receipt?.id, 'view']">{{receiptService.receipt?.id}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/receipt-service', receiptService.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

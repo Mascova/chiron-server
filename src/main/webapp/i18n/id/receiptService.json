@@ -1,0 +1,24 @@
+{
+    "chironServerApp": {
+        "receiptService": {
+            "home": {
+                "title": "Receipt Services",
+                "createLabel": "Buat Receipt Service baru",
+                "createOrEditLabel": "Buat atau edit Receipt Service"
+            },
+            "created": "Receipt Service dengan id {{ param }} telah dibuat",
+            "updated": "Receipt Service dengan id {{ param }} telah diperbaharui",
+            "deleted": "Receipt Service dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Receipt Service {{ id }}?"
+            },
+            "detail": {
+                "title": "Receipt Service"
+            },
+            "amount": "Amount",
+            "price": "Price",
+            "service": "Service",
+            "receipt": "Receipt"
+        }
+    }
+}

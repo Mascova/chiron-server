@@ -1,0 +1,40 @@
+{
+    "name": "Receipt",
+    "fields": [
+        {
+            "fieldName": "issueTime",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "visit",
+            "otherEntityName": "visit",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "receipt"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "receiptService",
+            "otherEntityName": "receiptService",
+            "otherEntityRelationshipName": "receipt"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "receiptDrug",
+            "otherEntityName": "receiptDrug",
+            "otherEntityRelationshipName": "receipt"
+        }
+    ],
+    "changelogDate": "20190221164418",
+    "entityTableName": "receipt",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

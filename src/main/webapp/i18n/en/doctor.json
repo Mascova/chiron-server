@@ -1,0 +1,27 @@
+{
+    "chironServerApp": {
+        "doctor": {
+            "home": {
+                "title": "Doctors",
+                "createLabel": "Create a new Doctor",
+                "createOrEditLabel": "Create or edit a Doctor"
+            },
+            "created": "A new Doctor is created with identifier {{ param }}",
+            "updated": "A Doctor is updated with identifier {{ param }}",
+            "deleted": "A Doctor is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Doctor {{ id }}?"
+            },
+            "detail": {
+                "title": "Doctor"
+            },
+            "nik": "Nik",
+            "name": "Name",
+            "address": "Address",
+            "dob": "Dob",
+            "phoneNo1": "Phone No 1",
+            "phoneNo2": "Phone No 2",
+            "visit": "Visit"
+        }
+    }
+}

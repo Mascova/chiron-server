@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity ReceiptDrug.
+    -->
+    <changeSet id="20190221164421-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="receipt_id"
+                                 baseTableName="receipt_drug"
+                                 constraintName="fk_receipt_drug_receipt_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="receipt"/>
+
+        <addForeignKeyConstraint baseColumnNames="drug_stock_id"
+                                 baseTableName="receipt_drug"
+                                 constraintName="fk_receipt_drug_drug_stock_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="drug_stock"/>
+
+    </changeSet>
+</databaseChangeLog>

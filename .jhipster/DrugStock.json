@@ -1,0 +1,48 @@
+{
+    "name": "DrugStock",
+    "fields": [
+        {
+            "fieldName": "buyDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "buyPrice",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "amount",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "expiryDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "sellPrice",
+            "fieldType": "BigDecimal"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "drugCatalogue",
+            "otherEntityName": "drugCatalogue",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "receiptDrug",
+            "otherEntityName": "receiptDrug",
+            "otherEntityRelationshipName": "drugStock"
+        }
+    ],
+    "changelogDate": "20190221164422",
+    "entityTableName": "drug_stock",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

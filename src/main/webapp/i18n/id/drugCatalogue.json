@@ -1,0 +1,23 @@
+{
+    "chironServerApp": {
+        "drugCatalogue": {
+            "home": {
+                "title": "Drug Catalogues",
+                "createLabel": "Buat Drug Catalogue baru",
+                "createOrEditLabel": "Buat atau edit Drug Catalogue"
+            },
+            "created": "Drug Catalogue dengan id {{ param }} telah dibuat",
+            "updated": "Drug Catalogue dengan id {{ param }} telah diperbaharui",
+            "deleted": "Drug Catalogue dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Drug Catalogue {{ id }}?"
+            },
+            "detail": {
+                "title": "Drug Catalogue"
+            },
+            "name": "Name",
+            "description": "Description",
+            "drugStock": "Drug Stock"
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "name": "Staff",
+    "fields": [
+        {
+            "fieldName": "nik",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "address",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dob",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "phoneNo1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "phoneNo2",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190221164415",
+    "entityTableName": "staff",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

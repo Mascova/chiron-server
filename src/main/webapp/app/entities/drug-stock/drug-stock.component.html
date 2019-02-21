@@ -1,0 +1,68 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="chironServerApp.drugStock.home.title">Drug Stocks</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-drug-stock" [routerLink]="['/drug-stock/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span  jhiTranslate="chironServerApp.drugStock.home.createLabel">
+            Create new Drug Stock
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="table-responsive" *ngIf="drugStocks">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span jhiTranslate="global.field.id">ID</span></th>
+            <th><span jhiTranslate="chironServerApp.drugStock.buyDate">Buy Date</span></th>
+            <th><span jhiTranslate="chironServerApp.drugStock.buyPrice">Buy Price</span></th>
+            <th><span jhiTranslate="chironServerApp.drugStock.amount">Amount</span></th>
+            <th><span jhiTranslate="chironServerApp.drugStock.expiryDate">Expiry Date</span></th>
+            <th><span jhiTranslate="chironServerApp.drugStock.sellPrice">Sell Price</span></th>
+            <th><span jhiTranslate="chironServerApp.drugStock.drugCatalogue">Drug Catalogue</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let drugStock of drugStocks ;trackBy: trackId">
+                <td><a [routerLink]="['/drug-stock', drugStock.id, 'view' ]">{{drugStock.id}}</a></td>
+                <td>{{drugStock.buyDate | date:'mediumDate'}}</td>
+                <td>{{drugStock.buyPrice}}</td>
+                <td>{{drugStock.amount}}</td>
+                <td>{{drugStock.expiryDate | date:'mediumDate'}}</td>
+                <td>{{drugStock.sellPrice}}</td>
+                <td>
+                    <div *ngIf="drugStock.drugCatalogue">
+                        <a [routerLink]="['../drug-catalogue', drugStock.drugCatalogue?.id, 'view' ]" >{{drugStock.drugCatalogue?.id}}</a>
+                    </div>
+                </td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['/drug-stock', drugStock.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/drug-stock', drugStock.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', 'drug-stock', { outlets: { popup: drugStock.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
