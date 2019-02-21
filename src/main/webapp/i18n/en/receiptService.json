@@ -1,0 +1,22 @@
+{
+    "chironServerApp": {
+        "receiptService": {
+            "home": {
+                "title": "Receipt Services",
+                "createLabel": "Create a new Receipt Service",
+                "createOrEditLabel": "Create or edit a Receipt Service"
+            },
+            "created": "A new Receipt Service is created with identifier {{ param }}",
+            "updated": "A Receipt Service is updated with identifier {{ param }}",
+            "deleted": "A Receipt Service is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Receipt Service {{ id }}?"
+            },
+            "detail": {
+                "title": "Receipt Service"
+            },
+            "amount": "Amount",
+            "price": "Price"
+        }
+    }
+}

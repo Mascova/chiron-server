@@ -1,0 +1,72 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="chironServerApp.visit.home.title">Visits</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-visit" [routerLink]="['/visit/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span  jhiTranslate="chironServerApp.visit.home.createLabel">
+            Create new Visit
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="table-responsive" *ngIf="visits">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span jhiTranslate="global.field.id">ID</span></th>
+            <th><span jhiTranslate="chironServerApp.visit.visitTime">Visit Time</span></th>
+            <th><span jhiTranslate="chironServerApp.visit.symptoms">Symptoms</span></th>
+            <th><span jhiTranslate="chironServerApp.visit.diagnose">Diagnose</span></th>
+            <th><span jhiTranslate="chironServerApp.visit.status">Status</span></th>
+            <th><span jhiTranslate="chironServerApp.visit.patient">Patient</span></th>
+            <th><span jhiTranslate="chironServerApp.visit.doctor">Doctor</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let visit of visits ;trackBy: trackId">
+                <td><a [routerLink]="['/visit', visit.id, 'view' ]">{{visit.id}}</a></td>
+                <td>{{visit.visitTime}}</td>
+                <td>{{visit.symptoms}}</td>
+                <td>{{visit.diagnose}}</td>
+                <td>{{visit.status}}</td>
+                <td>
+                    <div *ngIf="visit.patient">
+                        <a [routerLink]="['../patient', visit.patient?.id, 'view' ]" >{{visit.patient?.id}}</a>
+                    </div>
+                </td>
+                <td>
+                    <div *ngIf="visit.doctor">
+                        <a [routerLink]="['../doctor', visit.doctor?.id, 'view' ]" >{{visit.doctor?.id}}</a>
+                    </div>
+                </td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['/visit', visit.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/visit', visit.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', 'visit', { outlets: { popup: visit.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

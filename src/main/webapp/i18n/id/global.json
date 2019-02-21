@@ -8,6 +8,16 @@
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "Entitas",
+                "patient": "Patient",
+                "doctor": "Doctor",
+                "staff": "Staff",
+                "visit": "Visit",
+                "service": "Service",
+                "receipt": "Receipt",
+                "drugCatalogue": "Drug Catalogue",
+                "receiptService": "Receipt Service",
+                "receiptDrug": "Receipt Drug",
+                "drugStock": "Drug Stock",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

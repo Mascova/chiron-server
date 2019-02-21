@@ -1,0 +1,25 @@
+{
+    "chironServerApp": {
+        "drugStock": {
+            "home": {
+                "title": "Drug Stocks",
+                "createLabel": "Create a new Drug Stock",
+                "createOrEditLabel": "Create or edit a Drug Stock"
+            },
+            "created": "A new Drug Stock is created with identifier {{ param }}",
+            "updated": "A Drug Stock is updated with identifier {{ param }}",
+            "deleted": "A Drug Stock is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Drug Stock {{ id }}?"
+            },
+            "detail": {
+                "title": "Drug Stock"
+            },
+            "buyDate": "Buy Date",
+            "buyPrice": "Buy Price",
+            "amount": "Amount",
+            "expiryDate": "Expiry Date",
+            "sellPrice": "Sell Price"
+        }
+    }
+}
