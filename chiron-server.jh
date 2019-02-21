@@ -1,0 +1,71 @@
+
+entity Patient {
+	nik String,
+    name String,
+    address String,
+    dob LocalDate,
+    phoneNo1 String,
+    phoneNo2 String
+}
+
+entity Doctor {
+	nik String,
+    name String,
+    address String,
+    dob LocalDate,
+    phoneNo1 String,
+    phoneNo2 String
+}
+
+entity Staff {
+	nik String,
+    name String,
+    address String,
+    dob LocalDate,
+    phoneNo1 String,
+    phoneNo2 String
+}
+
+entity Visit {
+	visitTime String,
+    symptoms String,
+    diagnose String,
+    status Integer
+}
+
+entity Service {
+	code String,
+    name String,
+    price BigDecimal
+}
+
+entity Receipt {
+	issueTime Instant
+}
+
+entity DrugCatalogue {
+	name String,
+    description String
+}
+
+entity ReceiptService {
+	amount Integer,
+    price BigDecimal
+}
+
+entity ReceiptDrug {
+	amount Integer,
+    price BigDecimal
+}
+
+entity DrugStock {
+	buyDate LocalDate,
+    buyPrice BigDecimal,
+    amount Integer,
+    expiryDate LocalDate,
+    sellPrice BigDecimal
+}
+
+relationship OneToMany {
+	Patient{visit} to Visit
+}
